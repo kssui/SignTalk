@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Talk</title>
+</head>
+<body>
+    <h1>ABECEDARIO</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 80px;
+        }
+        h1 {
+            color: #171515;
+        }
+        .señas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 80px;
+            justify-items: center;
+            margin-top: 80px;
+        }
+        .seña {
+            text-align: center;
+        }
+        .seña img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 70px;
+        }
+        .seña span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Abecedario Interactivo</title>
+       <style>
+           .letter {
+               font-size: 2em;
+               margin: 10px;
+               display: inline-block;
+               cursor: pointer;
+           }
+           .section {
+               height: 100vh;
+               padding: 20px;
+               position: relative;
+           }
+           .back-to-top {
+               position: absolute;
+               top: 10px;
+               right: 10px;
+               text-decoration: none;
+               font-size: 1.5em;
+               color: #000;
+           }
+       </style>
+       <script>
+           function navigate(event, sectionId) {
+               event.preventDefault();
+               document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+           }
+       </script>
+   </head>
+   <body>
+       <div id="abecedario">
+           <!-- Enlaces del abecedario -->
+           <span class="letter" onclick="navigate(event, 'A')">A</span>
+           <span class="letter" onclick="navigate(event, 'B')">B</span>
+           <span class="letter" onclick="navigate(event, 'C')">C</span>
+           <span class="letter" onclick="navigate(event, 'D')">D</span>
+           <span class="letter" onclick="navigate(event, 'E')">E</span>
+           <span class="letter" onclick="navigate(event, 'F')">F</span>
+           <span class="letter" onclick="navigate(event, 'G')">G</span>
+           <span class="letter" onclick="navigate(event, 'H')">H</span>
+           <span class="letter" onclick="navigate(event, 'I')">I</span>
+           <span class="letter" onclick="navigate(event, 'J')">J</span>
+           <span class="letter" onclick="navigate(event, 'K')">K</span>
+           <span class="letter" onclick="navigate(event, 'L')">L</span>
+           <span class="letter" onclick="navigate(event, 'M')">M</span>
+           <span class="letter" onclick="navigate(event, 'N')">N</span>
+           <span class="letter" onclick="navigate(event, 'Ñ')">Ñ</span>
+           <span class="letter" onclick="navigate(event, 'O')">O</span>
+           <span class="letter" onclick="navigate(event, 'P')">P</span>
+           <span class="letter" onclick="navigate(event, 'Q')">Q</span>
+           <span class="letter" onclick="navigate(event, 'R')">R</span>
+           <span class="letter" onclick="navigate(event, 'S')">S</span>
+           <span class="letter" onclick="navigate(event, 'T')">T</span>
+           <span class="letter" onclick="navigate(event, 'U')">U</span>
+           <span class="letter" onclick="navigate(event, 'V')">V</span>
+           <span class="letter" onclick="navigate(event, 'W')">W</span>
+           <span class="letter" onclick="navigate(event, 'X')">X</span>
+           <span class="letter" onclick="navigate(event, 'Y')">Y</span>
+           <span class="letter" onclick="navigate(event, 'Z')">Z</span>
+           <span class="letter" onclick="navigate(event, 'Frases')">Frases</span>
+       </div>
+   
+       <!-- Secciones destino -->
+       <div id="A" class="section" style="background-color: #fafaeb;"> 
+        <H1>A  <H1> </H1>
+         <img src="aimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="B" class="section" style="background-color: #fafaeb;">
+        <H1>B  <H1> </H1>
+        <img src="bimg.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="C" class="section" style="background-color: #fafaeb;">
+        <H1>C  <H1> </H1>
+        <img src="Cimg.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="D" class="section" style="background-color: #fafaeb;">
+        <H1>D  <H1> </H1>
+           <img src="dimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="E" class="section" style="background-color: #fafaeb;">
+        <H1>E  <H1> </H1>
+           <img src="eimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="F" class="section" style="background-color:#fafaeb;">
+        <H1>F <H1> </H1>
+           <img src="fimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="G" class="section" style="background-color: #fafaeb;">
+        <H1>G  <H1> </H1>
+           <img src="gimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="H" class="section" style="background-color: #fafaeb;">
+        <H1>H  <H1> </H1>
+           <img src="himg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="I" class="section" style="background-color: #fafaeb;">
+        <H1>I  <H1> </H1>
+           <img src="iimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="J" class="section" style="background-color: #fafaeb;">
+        <H1>J  <H1> </H1>
+           <img src="jimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="K" class="section" style="background-color: #fafaeb;">
+        <H1>K  <H1> </H1>
+           <img src="kimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="L" class="section" style="background-color: #fafaeb;">
+        <H1>L  <H1> </H1>
+           <img src="limg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="M" class="section" style="background-color:#fafaeb;">
+        <H1>M  <H1> </H1>
+           <img src="mimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="N" class="section" style="background-color: #fafaeb;">
+        <H1>N  <H1> </H1>
+           <img src="nimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="Ñ" class="section" style="background-color: #fafaeb;">
+        <H1>Ñ  <H1> </H1>
+           <img src="ñimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="O" class="section" style="background-color:#fafaeb;">
+        <H1>O  <H1> </H1>
+           <img src="oimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="P" class="section" style="background-color: #fafaeb;">
+        <H1>P  <H1> </H1>
+           <img src="pimg.png.jpeg" alt=""width="500" height="560" />
+           <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+       </div>
+       <div id="Q" class="section" style="background-color: #fafaeb;">
+        <H1>Q  <H1> </H1>
+        <img src="qimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="R" class="section" style="background-color: #fafaeb;">
+        <H1>R  <H1> </H1>
+        <img src="rimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="S" class="section" style="background-color: #fafaeb;">
+        <H1>S  <H1> </H1>
+        <img src="simg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="T" class="section" style="background-color: #fafaeb;">
+        <H1>T  <H1> </H1>
+        <img src="timg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="U" class="section" style="background-color: #fafaeb;">
+        <H1>U  <H1> </H1>
+        <img src="uimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="V" class="section" style="background-color: #fafaeb;">
+        <H1>V  <H1> </H1>
+        <img src="vimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="W" class="section" style="background-color: #fafaeb;">
+        <H1>W  <H1> </H1>
+        <img src="wimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="X" class="section" style="background-color: #fafaeb;">
+        <H1>X  <H1> </H1>
+        <img src="ximg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="Y" class="section" style="background-color: #fafaeb;">
+        <H1>Y  <H1> </H1>
+        <img src="yimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+    </div>
+    <div id="Z" class="section" style="background-color: #fafaeb;">
+        <H1>Z  <H1> </H1>
+        <img src="zimg.png.jpeg" alt=""width="500" height="560" />
+        <a href="#abecedario" class="back-to-top" onclick="navigate(event, 'abecedario')">Volver al inicio</a>
+        <div id="Frases" class="section" style="background-color: #fafaeb;"> 
+            <H1>Frases  <H1>
+                <H2>Buenos dias  <H2> 
+                <img src="diasimg.jpeg" alt=""width="650" height="300" /> 
+                    <H3>Se coloca una letra b sobre el corazón, y se mueve al frente. Luego se hace una d, y se mueve en medio circulo hacia un lado</H3>
+        <div id="Frases" class="section" style="background-color: #fafaeb"> 
+                <H2>Buenas tardes  <H2> 
+                <img src="tardesimg.jpeg" alt=""width="650" height="300" /> 
+                    <H3>Se coloca una letra b sobre el corazón, y se mueve al frente. Luego se coloca una t sobre el ante brazo, y se mueve de línea recta hacia usted</H3>
+                    <div id="Frases" class="section" style="background-color: #fafaeb;"> 
+                        <H2>Buenas noches  <H2> 
+                        <img src="nochesimg.jpeg" alt=""width="650" height="300" /> 
+                    <H3>Se coloca una letra b sobre el corazón, y se mueve al frente. Luego se coloca una g sobre la frente, y se mueve hacia abajo.</H3>   
